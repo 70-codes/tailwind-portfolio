@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth transition-colors" id="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- Header Area -->
+    <header class="bg-slate-300 dark:bg-slate-700">
+      <!-- Top Header Area -->
+      <div class="bg-sky-700 py-5 dark:bg-sky-800 hidden sm:block">
+        <div class="container mx-auto flex justify-between text-slate-200">
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+            <p class="ml-3">00100, Nairobi - Kenya - 00100</p>
+          </div>
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+              />
+            </svg>
+            <p class="ml-3">Testing@gmail.com</p>
+          </div>
+          <div class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+              />
+            </svg>
+            <p class="ml-3">+254714301107</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header Area -->
+        <div
+          class="container mx-auto px-4 sm:px-0 flex justify-between items-center py-3 flex-col sm:flex-row"
+        >
+          <div class="flex flex-row w-full sm:w-auto items-center">
+            <h1
+              class="font-bold text-3xl text-slate-700 dark:text-white basis-1/2"
+            >
+              <a href=""
+                >Creed<span class="text-sky-500 dark:text-sky-400">347</span></a
+              >
+            </h1>
+            <div
+              id="menu_btn"
+              class="basis-1/2 cursor-pointer justify-end text-sky-700 dark:text-sky-400 sm:hidden flex"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-10"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
+            <div
+              class="sm:hidden block ml-5 cursor-pointer bg-indigo-400 hover:bg-indigo-300 rounded-full p-4 hover:transition-colors hover:duration-300"
+              id="change_btn"
+            >
+              <img id="change_image" class="w-5" src="img/moon.svg" alt="" />
+            </div>
+          </div>
+          <!-- Main Menu -->
+          <nav class="sm:flex w-full sm:w-auto hidden" id="main_menu">
+            <ul
+              class="flex w-full sm:w-auto justify-end py-3 flex-col sm:flex-row dark:text-slate-200"
+            >
+              <li class="ml-0 sm:ml-8 text-center">
+                <a
+                  href="#home"
+                  class="font-semibold uppercase text-md hover:text-sky-600 hover:transition-colors duration-300 dark:hover:text-sky-300"
+                  >Home</a
+                >
+              </li>
+              <li class="ml-0 sm:ml-8 text-center">
+                <a
+                  href="#service"
+                  class="font-semibold uppercase text-md hover:text-sky-600 hover:transition-colors duration-300 dark:hover:text-sky-300"
+                  >Service</a
+                >
+              </li>
+              <li class="ml-0 sm:ml-8 text-center">
+                <a
+                  href="#products"
+                  class="font-semibold uppercase text-md hover:text-sky-600 hover:transition-colors duration-300 dark:hover:text-sky-300"
+                  >Products</a
+                >
+              </li>
+              <li class="ml-0 sm:ml-8 text-center">
+                <a
+                  href="#portfolio"
+                  class="font-semibold uppercase text-md hover:text-sky-600 hover:transition-colors duration-300 dark:hover:text-sky-300"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="ml-0 sm:ml-8 text-center">
+                <a
+                  href="#blog"
+                  class="font-semibold uppercase text-md hover:text-sky-600 hover:transition-colors duration-300 dark:hover:text-sky-300"
+                  >Blog</a
+                >
+              </li>
+              <li class="ml-0 sm:ml-8 text-center mt-3 sm:mt-0">
+                <a href="#contact" class="btn">Let's Talk</a>
+              </li>
+            </ul>
+            <div
+              class="hidden sm:block ml-5 cursor-pointer bg-indigo-400 hover:bg-indigo-300 rounded-full p-4 hover:transition-colors hover:duration-300"
+              id="change_btn2"
+            >
+              <img id="change_image2" class="w-5" src="img/moon.svg" alt="" />
+            </div>
+          </nav>
+      </div>
+    </header>
+
+    <!-- Hero Area -->
+    <section class="bg-sky-800 dark:bg-slate-400 pt-4 pb-6 bg-opacity-20">
+      <div
+        class="container mx-auto px-4 sm:px-0 flex items-center justify-between flex-col sm:flex-row"
+      >
+        <div
+          class="order-2 sm:order-1 basis-full sm:basis-1/2 text-center sm:text-left"
+        >
+          <h1
+            class="font-extrabold text-4xl capitalize mb-3 text-black-200 dark:text-slate-800"
+          >
+            Creative Design & Experience
+          </h1>
+          <p class="w-3/4 dark:text-slate-800 mx-auto sm:mx-0">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos adipisci perferendis sed repellat earum. Animi at et hic
+            deleniti fugiat, quidem cupiditate saepe quos assumenda eos eum
+            blanditiis natus excepturi?
+          </p>
+          <p class="mt-6"><a class="btn" href="">About Me</a></p>
+        </div>
+        <div class="order-1 sm:order-2 basis-1/2">
+          <img class="" src="img/author.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Area -->
+    <section class="bg-sky-300 bg-opacity-35 dark:bg-slate-600 py-20" id="service">
+      <div class="container mx-auto px-4 sm:px-0 mb-4 py-5 dark:text-slate-300">
+        <h2 class="text-center text-3xl font-bold capitalize mb-3">
+          Software Developer
+        </h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+          reiciendis eveniet facere debitis, ullam repellat assumenda autem
+          deleniti sequi dolorum voluptas voluptatum nostrum? Consequuntur
+          facere non quidem vitae assumenda consectetur?
+        </p>
+      </div>
+      <div
+        class="container mx-auto px-4 sm:px-0 mt-10 flex flex-col sm:flex-row justify-between"
+      >
+        <div
+          class="dark:text-slate-200 shadow-lg shadow-indigo-300/50 p-8 rounded-lg mr-0 sm:mr-4 mb-5 bg-stone-100 dark:bg-slate-400"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="currentColor"
+            class="size-10 text-indigo-400"
+          >
+            <path d="M10.5 18.75a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z" />
+            <path
+              fill-rule="evenodd"
+              d="M8.625.75A3.375 3.375 0 0 0 5.25 4.125v15.75a3.375 3.375 0 0 0 3.375 3.375h6.75a3.375 3.375 0 0 0 3.375-3.375V4.125A3.375 3.375 0 0 0 15.375.75h-6.75ZM7.5 4.125C7.5 3.504 8.004 3 8.625 3H9.75v.375c0 .621.504 1.125 1.125 1.125h2.25c.621 0 1.125-.504 1.125-1.125V3h1.125c.621 0 1.125.504 1.125 1.125v15.75c0 .621-.504 1.125-1.125 1.125h-6.75A1.125 1.125 0 0 1 7.5 19.875V4.125Z"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <h4 class="font-bold text-xl mb-2">Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            sequi? Deserunt mollitia amet similique vitae inventore blanditiis
+            corrupti autem accusantium officia.
+          </p>
+          <p><a class="mt-3" href="">More info 👉</a></p>
+        </div>
+        <div
+          class="dark:text-slate-200 shadow-lg shadow-indigo-300/50 p-8 rounded-lg mr-0 sm:mr-4 mb-5 bg-stone-100 dark:bg-slate-400"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 text-indigo-400">
+          <path fill-rule="evenodd" d="M20.599 1.5c-.376 0-.743.111-1.055.32l-5.08 3.385a18.747 18.747 0 0 0-3.471 2.987 10.04 10.04 0 0 1 4.815 4.815 18.748 18.748 0 0 0 2.987-3.472l3.386-5.079A1.902 1.902 0 0 0 20.599 1.5Zm-8.3 14.025a18.76 18.76 0 0 0 1.896-1.207 8.026 8.026 0 0 0-4.513-4.513A18.75 18.75 0 0 0 8.475 11.7l-.278.5a5.26 5.26 0 0 1 3.601 3.602l.502-.278ZM6.75 13.5A3.75 3.75 0 0 0 3 17.25a1.5 1.5 0 0 1-1.601 1.497.75.75 0 0 0-.7 1.123 5.25 5.25 0 0 0 9.8-2.62 3.75 3.75 0 0 0-3.75-3.75Z" clip-rule="evenodd" />
+        </svg>
+        
+          </svg>
+          <h4 class="font-bold text-xl mb-2">Design</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            sequi? Deserunt mollitia amet similique vitae inventore blanditiis
+            corrupti autem accusantium officia.
+          </p>
+          <p><a class="mt-3" href="">More info 👉</a></p>
+        </div>
+        <div
+          class="dark:text-slate-200 shadow-lg shadow-indigo-300/50 p-8 rounded-lg mr-0 sm:mr-4 mb-5 bg-stone-100 dark:bg-slate-400"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 text-indigo-400">
+          <path d="M21.731 2.269a2.625 2.625 0 0 0-3.712 0l-1.157 1.157 3.712 3.712 1.157-1.157a2.625 2.625 0 0 0 0-3.712ZM19.513 8.199l-3.712-3.712-12.15 12.15a5.25 5.25 0 0 0-1.32 2.214l-.8 2.685a.75.75 0 0 0 .933.933l2.685-.8a5.25 5.25 0 0 0 2.214-1.32L19.513 8.2Z" />
+        </svg>
+        
+          <h4 class="font-bold text-xl mb-2">Copywriting</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            sequi? Deserunt mollitia amet similique vitae inventore blanditiis
+            corrupti autem accusantium officia.
+          </p>
+          <p><a class="mt-3" href="">More info 👉</a></p>
+        </div>
+        <div
+          class="dark:text-slate-200 shadow-lg shadow-indigo-300/50 p-8 rounded-lg mr-0 sm:mr-4 mb-5 bg-stone-100 dark:bg-slate-400"
+        >
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-10 text-indigo-400">
+          <path d="M18.375 2.25c-1.035 0-1.875.84-1.875 1.875v15.75c0 1.035.84 1.875 1.875 1.875h.75c1.035 0 1.875-.84 1.875-1.875V4.125c0-1.036-.84-1.875-1.875-1.875h-.75ZM9.75 8.625c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v11.25c0 1.035-.84 1.875-1.875 1.875h-.75a1.875 1.875 0 0 1-1.875-1.875V8.625ZM3 13.125c0-1.036.84-1.875 1.875-1.875h.75c1.036 0 1.875.84 1.875 1.875v6.75c0 1.035-.84 1.875-1.875 1.875h-.75A1.875 1.875 0 0 1 3 19.875v-6.75Z" />
+        </svg>
+        
+        
+          <h4 class="font-bold text-xl mb-2">Brand Experiance</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro,
+            sequi? Deserunt mollitia amet similique vitae inventore blanditiis
+            corrupti autem accusantium officia.
+          </p>
+          <p><a class="mt-3" href="">More info 👉</a></p>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Brand Area -->
+     <section class="dark:bg-slate-400 bg-sky-800 bg-opacity-20" id="brand">
+      <div class="container mx-auto px-4 sm:px-0 grid grid-cols-2 gap-2 sm:grid-cols-6 py-3 sm:py-10 items-center">
+        <img class="shadow-md rounded-md shadow-indigo-300/50" src="img/1.png" alt="">
+        <img class="shadow-md rounded-md shadow-indigo-300/50" src="img/2.png" alt="">
+        <img class="shadow-md rounded-md shadow-indigo-300/50" src="img/3.png" alt="">
+        <img class="shadow-md rounded-md shadow-indigo-300/50" src="img/4.png" alt="">
+        <img class="shadow-md rounded-md shadow-indigo-300/50" src="img/5.png" alt="">
+        <img class="shadow-md rounded-md shadow-indigo-300/50" src="img/6.png" alt="">
+      </div>
+     </section>
+
+     <!-- Portfolio Area -->
+      <section class="bg-sky-300 bg-opacity-35 dark:bg-slate-600 py-20" id="portfolio">
+        <div class="container mx-auto px-4 sm:px-0 mb-4 py-5 dark:text-slate-300">
+          <h2 class="text-center text-3xl font-bold capitalize mb-3">
+            Software Developer
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            reiciendis eveniet facere debitis, ullam repellat assumenda autem
+            deleniti sequi dolorum voluptas voluptatum nostrum? Consequuntur
+            facere non quidem vitae assumenda consectetur?
+          </p>
+        </div>
+        <div class="container mx-auto px-4 sm:px-0 mt-5 grid grid-cols-2 sm:grid-cols-3 gap-5 justify-between">
+          <div class="shadow-lg rounded-lg shadow-indigo-300/50 bg-slate-100 ">
+            <img class="block rounded" src="img/port_1.jpg" alt="">
+          </div>
+          <div class="shadow-lg rounded-lg shadow-indigo-300/50 bg-slate-100 ">
+            <img class="block rounded" src="img/port_2.jpg" alt="">
+          </div>
+          <div class="shadow-lg rounded-lg shadow-indigo-300/50 bg-slate-100 ">
+            <img class="block rounded" src="img/port_3.jpg" alt="">
+          </div>
+          <div class="shadow-lg rounded-lg shadow-indigo-300/50 bg-slate-100 ">
+            <img class="block rounded" src="img/port_4.jpg" alt="">
+          </div>
+          <div class="shadow-lg rounded-lg shadow-indigo-300/50 bg-slate-100 ">
+            <img class="block rounded" src="img/port_5.jpg" alt="">
+          </div>
+          <div class="shadow-lg rounded-lg shadow-indigo-300/50 bg-slate-100 ">
+            <img class="block rounded" src="img/port_6.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+
+      <!-- Contact Area -->
+       <section class="py-5 sm:py-10 bg-sky-800 dark:bg-slate-400 pt-4 pb-6 bg-opacity-20" id="contact">
+        <div class="container mx-auto px-4 sm:px-0 text-center py-5 dark:text-slate-800">
+          <h2 class="text-center text-3xl font-bold capitalize mb-3">
+            Let's Talk
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+            reiciendis eveniet facere debitis, ullam repellat assumenda autem
+            deleniti sequi dolorum voluptas voluptatum nostrum? Consequuntur
+            facere non quidem vitae assumenda consectetur?
+          </p>
+          <div class="container mx-auto px-4 sm:px-0 mt-3 sm:mt-5 flex justify-between flex-col sm:flex-row">
+            <div class="basis-full sm:basis-1/3 flex flex-col ">
+              <div class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 mb-4 bg-slate-100 dark:bg-slate-600 text-slate-800 dark:text-slate-100 text-center basis-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-10 mx-auto text-indigo-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                  />
+                </svg>
+                <p class="ml-3">00100, Nairobi - Kenya - 00100</p>
+              </div>
+              <div class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 mb-4 bg-slate-100 dark:bg-slate-600 text-slate-800 dark:text-slate-100 text-center basis-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-10 mx-auto text-indigo-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                  />
+                </svg>
+                <p class="ml-3">Testing@gmail.com</p>
+              </div>
+              <div class="shadow-lg p-8 rounded-lg shadow-indigo-300/50 mb-2 bg-slate-100 dark:bg-slate-600 text-slate-800 dark:text-slate-100 text-center basis-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-10 mx-auto text-indigo-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                  />
+                </svg>
+                <p class="ml-3">+254714301107</p>
+              </div>
+            </div>
+            <div class="basis-full sm:basis-2/3 mt-3 sm:mt-5 shadow-lg p-8 rounded-lg shadow-indigo-300/50 mb-4 bg-slate-100
+             dark:bg-slate-600 text-slate-800 dark:text-slate-100 items-center flex sm:ml-5">
+              <form action="" class="basis-full">
+                <label for="" class="block font-bold mb-3">Full Name</label>
+                <input class="border py-2 px-3 rounded-lg w-full shadow mb-3 dark:border-slate-400 dark:bg-slate-500" type="text" placeholder="Enter Your Name">
+                <label for="" class="block font-bold mb-3">Email Address</label>
+                <input class="border py-2 px-3 rounded-lg w-full shadow mb-3 dark:border-slate-400 dark:bg-slate-500" type="email" placeholder="Enter Your Email">
+                <label for="" class="block font-bold mb-3">Phone Number</label>
+                <input class="border py-2 px-3 rounded-lg w-full shadow mb-3 dark:border-slate-400 dark:bg-slate-500" type="text" placeholder="Enter Your Phone Number">
+                <label for="" class="block font-bold mb-3">Message</label>
+                <textarea class="border py-2 px-3 rounded-lg w-full shadow mb-3 dark:border-slate-400 dark:bg-slate-500" placeholder="Enter Your Message" type="text" name="" id=""></textarea>
+                <input class="btn mt-3" type="submit" value="Send Message">
+              </form>
+            </div>
+          </div>
+        </div>
+       </section>
+
+       <!-- Footer Area -->
+        <footer class="bg-sky-100 dark:bg-sky-700 py-4">
+          <div class="container mx-auto px-4 sm:px-0 text-center">
+            <p class="text-slate-900 dark:text-slate-100">copyright &copy; 2024 All Rights Reserved by <span class="underline font-semibold text-slate-300">Stephen Kinuthia</span></p>
+          </div>
+        </footer>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>

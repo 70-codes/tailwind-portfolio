@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .btn {
+        @apply font-semibold uppercase text-base text-slate-50 bg-indigo-500 py-3 px-8 rounded-full hover:bg-indigo-400 hover:transition-colors duration-500;
+    }
+}
